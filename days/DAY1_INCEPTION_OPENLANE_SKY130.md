@@ -73,6 +73,8 @@ OpenLANE is an automated open-source RTL-to-GDSII flow developed by Efabless tha
 | **Physical Signoff** | Magic & KLayout | GDSII layout generation and DRC rule verification |
 | **Electrical Signoff**| Netgen | Layout Versus Schematic (LVS) verification |
 
+![OpenLANE Flowchart](../images/day1_openlane_flowchart.png)
+
 ---
 
 ## 2. Lab Execution: Invoking OpenLANE & Synthesizing `picorv32a`

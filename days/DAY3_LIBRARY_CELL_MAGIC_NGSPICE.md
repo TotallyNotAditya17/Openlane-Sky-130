@@ -77,6 +77,8 @@ Inside ngspice:
 plot y vs time a
 ```
 
+![CMOS Inverter Transient Analysis](../images/day3_cmos_inverter_transient_analysis.png)
+
 ---
 
 ### 3.2 Dynamic Timing Characterization Calculations

@@ -37,6 +37,8 @@ CTS constructs a balanced buffer network (typically using an **H-Tree** topology
 - **Clock Latency (Insertion Delay)**: The absolute delay from the clock root source to the leaf registers.
 - CTS minimizes skew while maintaining clean clock transitions (slew).
 
+![Clock Tree H-Tree Topology](../images/day4_clock_tree_htree_topology.png)
+
 ---
 
 ## 2. Lab Execution: Integrating Custom Standard Cell

@@ -37,6 +37,8 @@ Floorplanning establishes the physical boundaries, shapes, and positions of macr
 - Clock pins are positioned equidistant from major sequential blocks to reduce initial insertion delay.
 - Placement blockages prevent standard cells from occupying I/O boundary corridors, leaving room for pad drivers and ESD protection circuits.
 
+![Floorplan Architecture](../images/day2_floorplan_architecture.png)
+
 ---
 
 ## 2. Lab Execution: Floorplanning and Placement

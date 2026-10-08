@@ -11,6 +11,8 @@ Before signal routing can occur, a robust power distribution grid must be genera
 - **Standard Cell Connections**: Vias connect the top metal straps through intermediate metal layers down to the standard cell rails on `met1`.
 - This ensures maximum IR drop across any point of the chip remains well below the $5\%$ limit of nominal supply voltage.
 
+![Power Distribution Mesh](../images/day5_power_distribution_mesh.png)
+
 ---
 
 ### 1.2 Routing Mechanics: Global Routing vs. Detailed Routing

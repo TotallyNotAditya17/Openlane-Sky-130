@@ -98,6 +98,8 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - **Flop Ratio**:
     $$\text{Flop Ratio} = \frac{1613}{15762} = 0.1023 \approx \mathbf{10.23\%}$$
 
+![OpenLANE Flow](images/day1_openlane_flowchart.png)
+
 ---
 
 ### Day 2: Floorplanning & Standard Cell Placement
@@ -109,6 +111,8 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
 - **Floorplan & Placement Execution**:
   - `run_floorplan`: Generated `picorv32a.floorplan.def` and verified pad pin locations and blockage borders in Magic.
   - `run_placement`: Performed global wirelength optimization and legalized cell placement with zero overlaps.
+
+![Floorplan Architecture](images/day2_floorplan_architecture.png)
 
 ---
 
@@ -127,6 +131,8 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - **Propagation Delay $t_{pHL}$**: **$22\,\text{ps}$**
   - **Propagation Delay $t_{pLH}$**: **$64\,\text{ps}$**
 
+![CMOS Inverter Waveform](images/day3_cmos_inverter_transient_analysis.png)
+
 ---
 
 ### Day 4: Custom Cell Integration, OpenSTA & Clock Tree Synthesis
@@ -141,6 +147,8 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - Built an H-Tree clock distribution network with balanced buffer chains (`run_cts`).
   - Executed post-CTS OpenROAD analysis with propagated clocks (`set_propagated_clock [all_clocks]`).
   - Achieved clock skew of **$110\,\text{ps}$** and positive slack on all endpoints.
+
+![H-Tree Network](images/day4_clock_tree_htree_topology.png)
 
 ---
 
@@ -157,6 +165,8 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - **Worst Hold Slack**: **$+0.184\,\text{ns}$ (MET)**
   - **Maximum Frequency**: **$47.48\,\text{MHz}$**
 - **Physical Signoff**: Verified zero Magic DRC violations, verified LVS with Netgen, and streamed out the final tapeout layout: `picorv32a.gds`.
+
+![PDN Mesh](images/day5_power_distribution_mesh.png)
 
 ---
 
