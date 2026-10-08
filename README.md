@@ -100,6 +100,10 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
 
 ![OpenLANE Flow](images/day1_openlane_flowchart.png)
 
+| OpenLANE Interactive Flow Invocation | Gate-Level Synthesis Statistics & Flop Count |
+| :---: | :---: |
+| ![OpenLANE Invocation](images/lab_screenshots/lab_day1_openlane_invocation.png) | ![Synthesis Stats](images/lab_screenshots/lab_day1_synthesis_stats.png) |
+
 ---
 
 ### Day 2: Floorplanning & Standard Cell Placement
@@ -113,6 +117,10 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - `run_placement`: Performed global wirelength optimization and legalized cell placement with zero overlaps.
 
 ![Floorplan Architecture](images/day2_floorplan_architecture.png)
+
+| Magic Floorplan DEF & Pin Inspection | Magic Legalized Standard Cell Placement |
+| :---: | :---: |
+| ![Magic Floorplan](images/lab_screenshots/lab_day2_magic_floorplan.png) | ![Magic Placement](images/lab_screenshots/lab_day2_magic_placement.png) |
 
 ---
 
@@ -133,6 +141,10 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
 
 ![CMOS Inverter Waveform](images/day3_cmos_inverter_transient_analysis.png)
 
+| Magic CMOS Inverter Physical Layout (`sky130_inv.mag`) | ngspice Transient Simulation Output Window |
+| :---: | :---: |
+| ![Inverter Layout](images/lab_screenshots/lab_day3_magic_inverter_layout.png) | ![ngspice Waveform](images/lab_screenshots/lab_day3_ngspice_transient_waveform.png) |
+
 ---
 
 ### Day 4: Custom Cell Integration, OpenSTA & Clock Tree Synthesis
@@ -149,6 +161,10 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
   - Achieved clock skew of **$110\,\text{ps}$** and positive slack on all endpoints.
 
 ![H-Tree Network](images/day4_clock_tree_htree_topology.png)
+
+| Magic Custom LEF Port Grid Alignment & Export | OpenSTA Pre-CTS Setup Slack & Path Report |
+| :---: | :---: |
+| ![Custom LEF Export](images/lab_screenshots/lab_day4_magic_lef_export.png) | ![OpenSTA Report](images/lab_screenshots/lab_day4_opensta_pre_cts_slack.png) |
 
 ---
 
@@ -167,6 +183,10 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
 - **Physical Signoff**: Verified zero Magic DRC violations, verified LVS with Netgen, and streamed out the final tapeout layout: `picorv32a.gds`.
 
 ![PDN Mesh](images/day5_power_distribution_mesh.png)
+
+| Magic Fully Routed Core Silicon Layout | Magic Detailed Routed Layer Zoom & DRC Clean |
+| :---: | :---: |
+| ![Full Routed Core](images/lab_screenshots/lab_day5_magic_routed_full_chip.png) | ![Zoomed Routed Layers](images/lab_screenshots/lab_day5_magic_routed_zoomed.png) |
 
 ---
 

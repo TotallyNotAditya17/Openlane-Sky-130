@@ -108,6 +108,8 @@ prep -design picorv32a
 
 This creates a dedicated timestamped run folder under `designs/picorv32a/runs/` and produces the consolidated `merged.nom.lef` technology file.
 
+![OpenLANE Container Invocation](../images/lab_screenshots/lab_day1_openlane_invocation.png)
+
 ---
 
 ### 2.3 Executing Logic Synthesis
@@ -138,6 +140,8 @@ From the synthesis output report:
 - **Total Standard Cell Count**: 15,762
 
 $$\text{Flop Ratio} = \frac{1613}{15762} = 0.1023 \implies \mathbf{10.23\%}$$
+
+![Synthesis Cell Statistics](../images/lab_screenshots/lab_day1_synthesis_stats.png)
 
 ### 3.2 Cell Area Summary
 - **Total Silicon Gate Area**: $147,712.83\,\mu\text{m}^2$

@@ -52,6 +52,8 @@ run_floorplan
 
 This executes `init_floorplan`, `place_io`, and `tap_decap_or`.
 
+![Floorplan Execution Log](../images/lab_screenshots/lab_day2_floorplan_run.png)
+
 ### 2.2 Inspecting Floorplan DEF in Magic
 The generated Design Exchange Format (DEF) file defines die coordinates, row definitions, and pin locations:
 
@@ -68,6 +70,8 @@ Key observations:
 3. I/O pins are placed along the core boundaries at specific layer pitches.
 4. Core-to-die boundary spacing accommodates pin buffers and power ring delivery channels.
 
+![Magic Floorplan DEF Inspection](../images/lab_screenshots/lab_day2_magic_floorplan.png)
+
 ---
 
 ### 2.3 Running Standard Cell Placement
@@ -79,6 +83,8 @@ Standard cell placement is executed in two phases:
 run_placement
 ```
 
+![Placement Execution Log](../images/lab_screenshots/lab_day2_placement_run.png)
+
 ### 2.4 Viewing Legalized Placement in Magic
 
 ```bash
@@ -89,3 +95,5 @@ magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech \
 ```
 
 All 15,762 standard cells are snapped to row sites with zero overlap, verified against design rules.
+
+![Legalized Placement in Magic](../images/lab_screenshots/lab_day2_magic_placement.png)

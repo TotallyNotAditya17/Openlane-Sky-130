@@ -63,6 +63,8 @@ gen_pdn
 
 OpenLANE creates the power grid straps and rails, writing the updated DEF file to `designs/picorv32a/runs/<run_tag>/tmp/floorplan/17-pdn.def`.
 
+![Routing Flow Execution Log](../images/lab_screenshots/lab_day5_routing_flow_log.png)
+
 Inspect the PDN layout in Magic:
 
 ```bash
@@ -98,11 +100,15 @@ magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech \
       def read picorv32a.def &
 ```
 
+![Magic Routed Full Chip](../images/lab_screenshots/lab_day5_magic_routed_full_chip.png)
+
 Zoom into the routed layout to verify:
 - Dense signal routing tracks across metal layers.
 - Seamless power rails and decap fill cells (`FILLER_*`).
 - Antenna protection diodes inserted on sensitive gate inputs.
 - Active green DRC indicator in Magic confirming **0 Design Rule Violations**.
+
+![Magic Zoomed Routed Silicon Layers](../images/lab_screenshots/lab_day5_magic_routed_zoomed.png)
 
 ---
 

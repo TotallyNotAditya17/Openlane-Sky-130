@@ -40,6 +40,8 @@ cd vsdstdcelldesign
 magic -T sky130A.tech sky130_inv.mag &
 ```
 
+![Magic CMOS Inverter Layout](../images/lab_screenshots/lab_day3_magic_inverter_layout.png)
+
 ---
 
 ### 2.2 Investigating & Fixing DRC Rule Errors in Magic
@@ -47,6 +49,8 @@ When inspecting foundry rules on the layout, spacing violations can occur:
 - **`poly.9` Rule**: Minimum spacing between polysilicon and active diffusion contact.
 - When inspecting older technology files, DRC errors were not triggered even with spacing $< 0.48\,\mu\text{m}$.
 - We open the `sky130A.tech` file, navigate to the DRC section, and correct the spacing threshold so that Magic accurately flags violations.
+
+![Magic DRC Violation Check](../images/lab_screenshots/lab_day3_magic_drc_check.png)
 
 ---
 
@@ -76,6 +80,8 @@ Inside ngspice:
 ```ngspice
 plot y vs time a
 ```
+
+![ngspice Transient Waveform Simulation](../images/lab_screenshots/lab_day3_ngspice_transient_waveform.png)
 
 ![CMOS Inverter Transient Analysis](../images/day3_cmos_inverter_transient_analysis.png)
 

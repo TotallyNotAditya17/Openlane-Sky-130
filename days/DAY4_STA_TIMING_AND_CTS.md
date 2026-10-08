@@ -58,10 +58,14 @@ grid 0.46um 0.34um 0.23um 0.17um
 lef write
 ```
 
+![Magic Custom LEF Export](../images/lab_screenshots/lab_day4_magic_lef_export.png)
+
 ---
 
 ### 2.2 Integrating Custom Cell into `picorv32a` Flow
 Copy the generated `sky130_vsdinv.lef` and timing libraries (`sky130_fd_sc_hd__*.lib`) to `designs/picorv32a/src/`.
+
+![Magic Tech DRC Fix](../images/lab_screenshots/lab_day4_magic_tech_drc_fix.png)
 
 Update `designs/picorv32a/config.tcl`:
 
@@ -92,6 +96,8 @@ Using `pre_sta.conf` and `my_base.sdc`:
 sta pre_sta.conf
 ```
 
+![OpenSTA Pre-CTS Timing Slack Report](../images/lab_screenshots/lab_day4_opensta_pre_cts_slack.png)
+
 ---
 
 ### 3.2 Running Clock Tree Synthesis (TritonCTS)
@@ -102,6 +108,8 @@ run_cts
 ```
 
 TritonCTS builds the clock buffer tree, reporting clock insertion delay, clock skew, and inserted buffer counts.
+
+![TritonCTS Execution Log](../images/lab_screenshots/lab_day4_triton_cts_run.png)
 
 ---
 
