@@ -1,0 +1,25 @@
+# EDA Tools Temporary & Cache Files
+*.log
+*.tmp
+*.vcd
+*.vpd
+*.db
+*.def.bak
+*.lef.bak
+*.v.bak
+
+# Magic and Netgen Temporary Files
+*.ext
+*.sim
+*.nodes
+
+# OpenLANE Runs Output Dumps (keep key reports and summaries)
+designs/**/runs/*/tmp/
+designs/**/runs/*/logs/
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/

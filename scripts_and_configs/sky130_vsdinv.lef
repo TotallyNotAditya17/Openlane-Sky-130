@@ -1,0 +1,49 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsdinv
+  CLASS CORE ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.380 BY 2.720 ;
+  SYMMETRY X Y ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT 0.060 1.180 0.230 1.540 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT 0.760 0.900 0.930 1.820 ;
+    END
+  END Y
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER m1 ;
+        RECT 0.000 2.440 1.380 2.720 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER m1 ;
+        RECT 0.000 0.000 1.380 0.280 ;
+    END
+  END VGND
+  OBS
+    LAYER li1 ;
+      RECT 0.060 0.280 0.460 2.440 ;
+      RECT 0.760 0.280 1.320 2.440 ;
+  END
+END sky130_vsdinv
+END LIBRARY

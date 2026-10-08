@@ -1,0 +1,46 @@
+* SPICE3 file created from sky130_inv.ext - technology: sky130A
+* Standard Cell Inverter Characterization Deck for ngspice
+* VSD SoC Design Workshop | SkyWater 130nm PDK
+
+.include "pshort.mod"
+.include "nshort.mod"
+
+.option scale=0.01u
+.option rthresh=0
+.option cthresh=0
+
+* Subcircuit definition of custom inverter
+.subckt sky130_inv A Y VPWR VGND
+M1000 Y A VGND VGND nshort w=35 l=23
++ ad=1435 pd=152 as=1365 ps=148
+M1001 Y A VPWR VPWR pshort w=37 l=23
++ ad=1443 pd=152 as=1517 ps=156
+C0 VPWR VGND 0.11f
+C1 A VPWR 0.08f
+C2 A VGND 0.06f
+C3 Y VPWR 0.12f
+C4 Y VGND 0.18f
+C5 A Y 0.05f
+.ends
+
+* Top-Level Testbench Instances
+X1 in out vdd gnd sky130_inv
+
+* Power Supply Sources
+Vdd vdd gnd 3.3V
+Vss gnd 0 0V
+
+* Input Pulse Stimulus (Rise/Fall = 20ps, Pulse width = 1ns, Period = 2ns)
+Vin in gnd PULSE(0V 3.3V 0 0.02n 0.02n 1n 2n)
+
+* Load Capacitance at Output Y (representing next stage fanout load)
+Cload out gnd 2fF
+
+* Simulation Directives: Transient analysis from 0 to 2.5ns with 10ps step size
+.control
+tran 10p 2.5n
+run
+plot v(in) v(out)
+.endc
+
+.end
