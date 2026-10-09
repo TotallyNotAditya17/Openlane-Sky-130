@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning: Complete RTL-to-GDSII Flow
+# Openlane Sky 130: Complete RTL-to-GDSII Physical Design Flow
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![PDK: SkyWater 130nm](https://img.shields.io/badge/PDK-SkyWater_130nm-green.svg)](https://github.com/google/skywater-pdk)
@@ -213,7 +213,7 @@ Detailed day-by-day technical lab guides, theory, and step-by-step instructions 
 ## 📂 Repository File Hierarchy
 
 ```
-soc-design-and-planning-vsd/
+Openlane-Sky-130/
 ├── README.md                           # Master Project Overview (This Document)
 │
 ├── days/                               # In-Depth Day-by-Day Lab Modules
